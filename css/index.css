@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+     /*  Delete later  border 1px*/
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -31,24 +32,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
@@ -71,6 +59,44 @@ p {
     margin: 0 auto;
 }
 
+/* nav styles */
+
+nav {
+    display: flex;
+    padding: 20px 3%;
+    font-size: 14px;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    margin-left: 10.5%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 1.5%;
+    width: 63%;
+    text-decoration: none;
+}
+
+.links a{
+    color: black;
+    display:flex;
+    margin-top: 1%;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 2%;
+}
+
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +110,44 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+.top-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.div-img {
+    margin-top:7%;
+}
+
+.text-box {
+    border-bottom: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    padding: 1%;
+}
+
+.text-box button {
+    border-radius: 10px;
+    width: 35%;
+    display: flex-start;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 2% 0;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.container-about-page {
+    margin-bottom: 3%;
+    padding: 0 2%;
+}
+
+/* middle styles */
 
 .middle-content {
     margin-bottom: 20px;
@@ -125,6 +189,12 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+.bottom-text {
+    margin: 5% 2%;
+}
+
+/* Footer styles */
 
 footer {
     width: 100%;
